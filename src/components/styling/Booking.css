@@ -1,0 +1,334 @@
+.booking-section {
+  width: 100%;
+  padding: 60px 24px 150px;
+  background: #ffffff;
+}
+
+.booking-card {
+  position: relative;
+  width: 100%;
+  max-width: 1340px;
+  height: 510px;
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  border-radius: 36px;
+
+  background:
+    radial-gradient(
+      ellipse 70% 65% at 50% 100%,
+      rgba(255, 203, 170, 0.62),
+      rgba(255, 224, 202, 0.28) 48%,
+      transparent 78%
+    ),
+    linear-gradient(
+      180deg,
+      #f9f9fa 0%,
+      #fafafa 38%,
+      #fffaf6 100%
+    );
+
+  border: 1px solid rgba(0, 0, 0, 0.035);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.035);
+}
+
+
+/* CONTENT */
+
+.booking-content {
+  position: relative;
+  z-index: 2;
+
+  padding: 80px 82px;
+}
+
+
+/* ONLINE PILL */
+
+.booking-status {
+  width: fit-content;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 8px 0 17px;
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.52);
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.025);
+}
+
+.booking-status-dot {
+  width: 10px;
+  height: 10px;
+
+  margin-right: 9px;
+
+  border-radius: 50%;
+  background: #3fe02e;
+
+  box-shadow: 0 0 0 2px rgba(63, 224, 46, 0.08);
+}
+
+.booking-status-text {
+  color: #7c8793;
+
+  font-size: 15px;
+  line-height: 1;
+
+  letter-spacing: -0.02em;
+}
+
+
+/* AVATARS */
+
+.booking-avatars {
+  display: flex;
+  align-items: center;
+
+  margin-left: 12px;
+}
+
+.booking-avatar {
+  width: 32px;
+  height: 32px;
+
+  margin-left: -5px;
+
+  display: block;
+
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+
+  background-size: cover;
+  background-position: center;
+
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+.avatar-one {
+  background:
+    linear-gradient(135deg, #76856f, #c4a989);
+}
+
+.avatar-two {
+  background:
+    linear-gradient(135deg, #4d6880, #d1a27c);
+}
+
+.avatar-three {
+  background:
+    linear-gradient(135deg, #3e3e3e, #aa806c);
+}
+
+.avatar-four {
+  background:
+    linear-gradient(135deg, #dddddd, #222222);
+}
+
+
+/* HEADING */
+
+.booking-heading {
+  margin: 27px 0 0;
+
+  color: #171719;
+
+  font-size: clamp(56px, 5vw, 68px);
+  line-height: 0.95;
+
+  font-weight: 500;
+  letter-spacing: -0.065em;
+}
+
+
+/* DESCRIPTION */
+
+.booking-description {
+  margin: 22px 0 0;
+
+  color: #7d8995;
+
+  font-size: 27px;
+  line-height: 1.4;
+
+  font-weight: 450;
+  letter-spacing: -0.04em;
+}
+
+
+/* BUTTON */
+
+.booking-button {
+  width: 216px;
+  height: 67px;
+
+  margin-top: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  border-radius: 999px;
+
+  background: #1d1d1f;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  letter-spacing: -0.025em;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.booking-button:hover {
+  background: #000000;
+  transform: translateY(-2px);
+}
+
+
+/* GOOGLE MEET ICON */
+
+.meet-icon {
+  position: relative;
+
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+}
+
+.meet-icon::before {
+  content: "";
+
+  width: 19px;
+  height: 15px;
+
+  border-radius: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #4285f4 0 38%,
+      #34a853 38% 62%,
+      #fbbc04 62% 78%,
+      #ea4335 78% 100%
+    );
+}
+
+.meet-camera {
+  position: absolute;
+
+  right: 3px;
+
+  width: 7px;
+  height: 10px;
+
+  background: #4285f4;
+
+  clip-path: polygon(
+    0 20%,
+    55% 20%,
+    100% 0,
+    100% 100%,
+    55% 80%,
+    0 80%
+  );
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .booking-section {
+    padding: 45px 20px 110px;
+  }
+
+  .booking-card {
+    height: 500px;
+    border-radius: 30px;
+  }
+
+  .booking-content {
+    padding: 65px 55px;
+  }
+
+  .booking-description {
+    font-size: 23px;
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .booking-section {
+    padding: 25px 16px 90px;
+  }
+
+  .booking-card {
+    height: auto;
+    min-height: 540px;
+
+    border-radius: 25px;
+  }
+
+  .booking-content {
+    padding: 45px 28px 55px;
+  }
+
+  .booking-status {
+    height: 44px;
+  }
+
+  .booking-avatar {
+    width: 29px;
+    height: 29px;
+  }
+
+  .booking-heading {
+    margin-top: 25px;
+
+    font-size: 52px;
+  }
+
+  .booking-description {
+    margin-top: 20px;
+
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .booking-button {
+    width: 205px;
+    height: 60px;
+
+    margin-top: 36px;
+
+    font-size: 16px;
+  }
+}

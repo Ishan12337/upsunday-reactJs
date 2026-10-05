@@ -1,0 +1,835 @@
+/* =========================================================
+   TESTIMONIALS SECTION
+========================================================= */
+
+.testimonials-section {
+  width: 100%;
+
+  padding: 96px 24px 80px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   SAME ALIGNMENT AS WORK + STATS
+========================================================= */
+
+.testimonials-container {
+  width: 100%;
+
+  max-width: 1140px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.testimonials-heading {
+  margin: 0 0 42px;
+
+  color: #171719;
+
+  font-size: clamp(44px, 4.6vw, 64px);
+
+  line-height: 0.95;
+
+  font-weight: 500;
+
+  letter-spacing: -0.055em;
+}
+
+
+/* =========================================================
+   VIEWPORT
+========================================================= */
+
+.testimonials-viewport {
+  width: 100%;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   TRACK
+
+   368 × 3 + 18 × 2 = 1140px
+========================================================= */
+
+.testimonials-track {
+  --card-width: 368px;
+  --card-gap: 18px;
+
+  display: flex;
+
+  align-items: stretch;
+
+  gap: var(--card-gap);
+
+  width: max-content;
+
+  transform: translate3d(
+    calc(
+      var(--testimonial-index) *
+      -1 *
+      (var(--card-width) + var(--card-gap))
+    ),
+    0,
+    0
+  );
+
+  transition:
+    transform 0.72s cubic-bezier(
+      0.22,
+      1,
+      0.36,
+      1
+    );
+
+  will-change: transform;
+
+  backface-visibility: hidden;
+
+  -webkit-backface-visibility: hidden;
+}
+
+
+/* =========================================================
+   TESTIMONIAL CARD
+========================================================= */
+
+.testimonial-card {
+  position: relative;
+
+  flex: 0 0 var(--card-width);
+
+  width: var(--card-width);
+
+  min-width: var(--card-width);
+
+  height: 420px;
+
+  box-sizing: border-box;
+
+  padding: 34px 36px 34px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(0, 0, 0, 0.035);
+
+  border-radius: 26px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.05);
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   TOP
+========================================================= */
+
+.testimonial-card-top {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.testimonial-logo {
+  width: 43px;
+
+  height: 43px;
+
+  flex: 0 0 43px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: -0.04em;
+}
+
+.logo-leftcoast {
+  background: #ffffff;
+
+  color: #111111;
+
+  border: 1px solid #e3e3e3;
+
+  font-size: 24px;
+
+  font-weight: 400;
+}
+
+.logo-milk {
+  background: #111111;
+
+  color: #ffffff;
+
+  font-family: Georgia, serif;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+.logo-cobe {
+  background: #204b86;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+.logo-badbirdie {
+  background: #ffffff;
+
+  color: #111111;
+
+  border: 1px solid #e3e3e3;
+
+  font-size: 7px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   WEBSITE BUTTON
+========================================================= */
+
+.testimonial-website {
+  height: 32px;
+
+  padding: 0 11px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  flex-shrink: 0;
+
+  box-sizing: border-box;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 999px;
+
+  background: #ffffff;
+
+  color: #858991;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  line-height: 1;
+
+  font-weight: 500;
+
+  letter-spacing: -0.015em;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.testimonial-website:hover {
+  background: #fafafa;
+
+  color: #171719;
+
+  border-color: #d9d9d9;
+}
+
+.website-arrow {
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.testimonial-quote {
+  margin: 30px 0 0;
+
+  padding: 0;
+
+  color: #171719;
+
+  font-size: 22px;
+
+  line-height: 1.34;
+
+  font-weight: 450;
+
+  letter-spacing: -0.04em;
+}
+
+
+/* =========================================================
+   PERSON
+========================================================= */
+
+.testimonial-person {
+  margin-top: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   AVATAR
+========================================================= */
+
+.testimonial-avatar {
+  width: 40px;
+
+  height: 40px;
+
+  flex: 0 0 40px;
+
+  border-radius: 50%;
+
+  background-size: cover;
+
+  background-position: center;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   PLACEHOLDER AVATARS
+========================================================= */
+
+.avatar-craig {
+  background:
+    radial-gradient(
+      circle at 50% 28%,
+      #c6c6c6 0 15%,
+      transparent 16%
+    ),
+    linear-gradient(
+      135deg,
+      #eeeeee,
+      #222222
+    );
+}
+
+.avatar-chasen {
+  background:
+    radial-gradient(
+      circle at 50% 28%,
+      #d4b69c 0 15%,
+      transparent 16%
+    ),
+    linear-gradient(
+      135deg,
+      #eeeeee,
+      #777777
+    );
+}
+
+.avatar-shaun {
+  background:
+    radial-gradient(
+      circle at 50% 27%,
+      #bdbdbd 0 15%,
+      transparent 16%
+    ),
+    linear-gradient(
+      135deg,
+      #eeeeee,
+      #aaaaaa
+    );
+}
+
+.avatar-tanner {
+  background:
+    radial-gradient(
+      circle at 50% 27%,
+      #c9b39d 0 15%,
+      transparent 16%
+    ),
+    linear-gradient(
+      135deg,
+      #eeeeee,
+      #555555
+    );
+}
+
+
+/* =========================================================
+   PERSON INFO
+========================================================= */
+
+.testimonial-person-info {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.testimonial-person-info strong {
+  display: block;
+
+  color: #171719;
+
+  font-size: 13px;
+
+  line-height: 1.1;
+
+  font-weight: 600;
+
+  letter-spacing: -0.02em;
+}
+
+.testimonial-person-info span {
+  display: block;
+
+  color: #858b93;
+
+  font-size: 12px;
+
+  line-height: 1.15;
+
+  font-weight: 400;
+
+  letter-spacing: -0.015em;
+}
+
+
+/* =========================================================
+   CTA CARD
+========================================================= */
+
+.testimonial-cta-card {
+  flex: 0 0 var(--card-width);
+
+  width: var(--card-width);
+
+  min-width: var(--card-width);
+
+  height: 420px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 26px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(0, 0, 0, 0.035);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-cta-inner {
+  width: 250px;
+}
+
+.testimonial-cta-inner p {
+  margin: 0 0 12px;
+
+  color: #858991;
+
+  font-size: 15px;
+
+  line-height: 1.3;
+
+  font-weight: 400;
+}
+
+.testimonial-cta-inner h3 {
+  margin: 0 0 30px;
+
+  color: #171719;
+
+  font-size: 34px;
+
+  line-height: 1;
+
+  font-weight: 500;
+
+  letter-spacing: -0.055em;
+}
+
+.testimonial-cta-inner a {
+  height: 52px;
+
+  padding: 0 27px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 999px;
+
+  background: #171719;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.testimonial-cta-inner a:hover {
+  background: #000000;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   CONTROLS
+========================================================= */
+
+.testimonials-controls {
+  width: 100%;
+
+  margin-top: 34px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 24px;
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.testimonial-progress {
+  position: relative;
+
+  flex: 1;
+
+  height: 2px;
+
+  background: #e5e5e5;
+
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.testimonial-progress span {
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 33.333%;
+
+  height: 2px;
+
+  background: #171719;
+
+  transform-origin: left center;
+
+  transition:
+    transform 0.72s cubic-bezier(
+      0.22,
+      1,
+      0.36,
+      1
+    );
+
+  will-change: transform;
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.testimonial-arrows {
+  flex: 0 0 auto;
+
+  display: flex;
+
+  gap: 9px;
+}
+
+.testimonial-arrow {
+  width: 46px;
+
+  height: 46px;
+
+  padding: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border: 1px solid #ededed;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #171719;
+
+  font-family: inherit;
+
+  font-size: 19px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.testimonial-arrow:hover:not(:disabled) {
+  background: #f7f7f7;
+
+  border-color: #dddddd;
+
+  transform: translateY(-2px);
+}
+
+.testimonial-arrow:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.testimonial-arrow:disabled {
+  opacity: 0.35;
+
+  cursor: default;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .testimonials-section {
+    padding: 80px 24px 70px;
+  }
+
+  .testimonials-container {
+    max-width: 100%;
+  }
+
+  .testimonials-heading {
+    font-size: 54px;
+  }
+
+  .testimonials-track {
+    --card-width: 380px;
+    --card-gap: 16px;
+  }
+
+  .testimonial-card,
+  .testimonial-cta-card {
+    width: 380px;
+
+    min-width: 380px;
+
+    height: 420px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  .testimonials-section {
+    padding: 72px 16px 60px;
+  }
+
+  .testimonials-container {
+    width: 100%;
+  }
+
+  .testimonials-heading {
+    margin-bottom: 28px;
+
+    font-size: 46px;
+
+    line-height: 0.95;
+  }
+
+  .testimonials-track {
+    --card-width: calc(100vw - 32px);
+    --card-gap: 12px;
+  }
+
+  .testimonial-card,
+  .testimonial-cta-card {
+    width: calc(100vw - 32px);
+
+    min-width: calc(100vw - 32px);
+
+    height: 420px;
+
+    border-radius: 24px;
+  }
+
+  .testimonial-card {
+    padding: 28px;
+  }
+
+  .testimonial-quote {
+    margin-top: 28px;
+
+    font-size: 21px;
+
+    line-height: 1.35;
+  }
+
+  .testimonial-cta-inner {
+    width: calc(100% - 20px);
+  }
+
+  .testimonial-cta-inner h3 {
+    font-size: 31px;
+
+    margin-bottom: 28px;
+  }
+
+  .testimonials-controls {
+    margin-top: 28px;
+
+    gap: 14px;
+  }
+
+  .testimonial-arrow {
+    width: 44px;
+
+    height: 44px;
+
+    font-size: 18px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .testimonials-section {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .testimonials-heading {
+    font-size: 42px;
+  }
+
+  .testimonials-track {
+    --card-width: calc(100vw - 24px);
+  }
+
+  .testimonial-card,
+  .testimonial-cta-card {
+    width: calc(100vw - 24px);
+
+    min-width: calc(100vw - 24px);
+
+    height: 410px;
+
+    padding: 26px;
+  }
+
+  .testimonial-quote {
+    font-size: 20px;
+  }
+}
+
+
+/* =========================================================
+   HORIZONTAL SAFETY
+========================================================= */
+
+html,
+body {
+  max-width: 100%;
+
+  overflow-x: hidden;
+}
