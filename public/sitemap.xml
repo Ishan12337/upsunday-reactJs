@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace example.com with the production domain before launch. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/</loc></url>
+  <url><loc>https://example.com/services</loc></url>
+  <url><loc>https://example.com/services/brand-identity</loc></url>
+  <url><loc>https://example.com/services/web-design-development</loc></url>
+  <url><loc>https://example.com/services/software-development</loc></url>
+  <url><loc>https://example.com/services/motion-3d</loc></url>
+  <url><loc>https://example.com/work</loc></url>
+  <url><loc>https://example.com/work/milk-and-cookies</loc></url>
+  <url><loc>https://example.com/work/left-coast</loc></url>
+  <url><loc>https://example.com/work/soft-service</loc></url>
+  <url><loc>https://example.com/work/common-ground</loc></url>
+  <url><loc>https://example.com/about</loc></url>
+  <url><loc>https://example.com/process</loc></url>
+  <url><loc>https://example.com/blog</loc></url>
+  <url><loc>https://example.com/blog/quiet-confidence</loc></url>
+  <url><loc>https://example.com/blog/useful-thing-inevitable</loc></url>
+  <url><loc>https://example.com/blog/less-considered</loc></url>
+  <url><loc>https://example.com/contact</loc></url>
+  <url><loc>https://example.com/careers</loc></url>
+  <url><loc>https://example.com/privacy</loc></url>
+  <url><loc>https://example.com/terms</loc></url>
+</urlset>
